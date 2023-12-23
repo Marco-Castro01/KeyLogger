@@ -1,0 +1,5 @@
+# Ignorar el propio archivo .gitignore
+.gitignore
+
+# Ignorar archivos con extensión .ide
+*.idea/
