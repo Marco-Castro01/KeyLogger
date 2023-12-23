@@ -1,0 +1,20 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Frontend.src.subpages.Details_prompt.get_properties" />
+          <option value="Frontend.src.subpages.Details_prompt.Helpers" />
+          <option value="Frontend.src.subpages.Details_prompt.settings" />
+          <option value="Frontend.src.subpages.Details_prompt.get_prompt_config_by_id" />
+          <option value="Frontend.src.subpages.Details_prompt.get_detail_prompt_id" />
+          <option value="Frontend.src.subpages.Details_prompt.get_key_index" />
+          <option value="Frontend.src.subpages.Details_prompt_version.generate_table" />
+          <option value="Frontend.src.subpages.Details_prompt_config.post_prompt_version" />
+          <option value="Frontend.src.subpages.Prompt_catalog.get_detail_prompt_id" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
