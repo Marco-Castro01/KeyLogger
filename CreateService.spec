@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['CreateService.py'],
+    ['Client\\CreateService.py'],
     pathex=[],
     binaries=[],
     datas=[],
