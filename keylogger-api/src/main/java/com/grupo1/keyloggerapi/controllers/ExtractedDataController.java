@@ -18,6 +18,7 @@ public class ExtractedDataController {
     private final String encryptationKey = "grupo1";
     private AESEncryptionDecryption cypher = new AESEncryptionDecryption();
 
+    @CrossOrigin
     @GetMapping("all/query")
     public ArrayList<ExtractedDataModel> obtainAllData(@RequestParam("key") String privateKey) {
         ArrayList<ExtractedDataModel> result = extractedDataService.obtainData();
@@ -27,12 +28,14 @@ public class ExtractedDataController {
         return result;
     }
 
+    @CrossOrigin
     @PostMapping()
     public ExtractedDataModel saveData(@RequestBody ExtractedDataModel data) {
         data.setData(cypher.encrypt(data.getData(), encryptationKey));
         return this.extractedDataService.saveData(data);
     }
 
+    @CrossOrigin
     @GetMapping("id/query")
     public Optional<ExtractedDataModel> obtainDataById(@RequestParam("id") long id,
             @RequestParam("key") String privateKey) {
@@ -42,6 +45,7 @@ public class ExtractedDataController {
         return result;
     }
 
+    @CrossOrigin
     @DeleteMapping(path = "/{id}")
     public String deleteDataById(@PathVariable("id") Long id) {
 

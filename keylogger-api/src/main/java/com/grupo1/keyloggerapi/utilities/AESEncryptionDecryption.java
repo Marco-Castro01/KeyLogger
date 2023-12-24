@@ -49,7 +49,7 @@ public class AESEncryptionDecryption {
         } catch (Exception e) {
             //System.out.println("Error while decrypting: " + e.toString());
         }
-        return "<encrypted>";
+        return "[ENCRYPTED]";
     }
 
 }
