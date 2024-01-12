@@ -17,6 +17,8 @@ public class ExtractedDataModel {
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", nullable = false)
     private Date obtainedDate = new Date();
 
+    @Lob
+    @Column(length = 500)
     private String data;
 
     public Long getId() {
