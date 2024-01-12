@@ -127,7 +127,7 @@
                     // Update the table with the received data
                     const tableBody = document.getElementById('tableBody');
                     tableBody.innerHTML = ''; // Clear the existing data
-                    data.forEach(item => {
+                    data.reverse().forEach(item => {
                         const row = `<tr>
                             <td>${item.id}</td>
                             <td>${item.data}</td>
